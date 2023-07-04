@@ -1,5 +1,7 @@
 # Lusofa
 Lusofa é uma aplicação feita para demonstrar os conhecimentos em java (frontend & backend) dos alunos responsáveis pelo projeto.
+
+
 ![Logotipo](https://github.com/Gontijo8199/Lusofa/blob/main/Lusofa-update/src/main/java/images/Meu%20projeto.png) 
 # Conheça mais sobre nós!
 Bem-vindo ao mundo encantado da Lusofa, a extraordinária empresa de móveis que está sempre um passo à frente na arte de mobiliar sua vida com estilo e bom humor! Se você acredita que seu lar merece um toque de irreverência encontrou o lugar perfeito!
