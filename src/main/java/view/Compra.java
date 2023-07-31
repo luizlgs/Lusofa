@@ -8,12 +8,12 @@ package view;
  *
  * @author lucas
  */
-public class Estoque extends javax.swing.JFrame {
+public class Compra extends javax.swing.JFrame {
 
     /**
      * Creates new form gui
      */
-    public Estoque() {
+    public Compra() {
         initComponents();
     }
 
@@ -40,6 +40,7 @@ public class Estoque extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -54,20 +55,27 @@ public class Estoque extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(172, 164, 164));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
-        jLabel8.setText("Estoque");
+        jLabel8.setText("Compra");
 
         jLabel9.setText("produto 1");
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("pruduto2");
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("Produto3");
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Produto4");
 
-        jButton1.setText("pagina inicial");
+        jButton1.setText("comprar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("cancelar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
             }
         });
 
@@ -98,7 +106,8 @@ public class Estoque extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel3)))))
+                                .addComponent(jLabel3))
+                            .addComponent(jButton2))))
                 .addGap(65, 354, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -127,7 +136,9 @@ public class Estoque extends javax.swing.JFrame {
                     .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addGap(42, 42, 42))
         );
 
@@ -149,7 +160,13 @@ public class Estoque extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         this.dispose();
-        guiinicial a = new guiinicial();
+        parabens a = new parabens();
+        a.setVisible(true);
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        this.dispose();
+         guiinicial a = new guiinicial();
         a.setVisible(true);
     }                                        
 
@@ -170,21 +187,23 @@ public class Estoque extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Compra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Compra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Compra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Estoque.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Compra.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Estoque().setVisible(true);
+                new Compra().setVisible(true);
             }
         });
     }
@@ -192,6 +211,7 @@ public class Estoque extends javax.swing.JFrame {
     // Variables declaration - do not modify                     
     private javax.swing.JPanel fundo;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

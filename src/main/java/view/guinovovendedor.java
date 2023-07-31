@@ -226,7 +226,9 @@ public class guinovovendedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        Gui a = new Gui();
+        a.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jPasswordField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField3ActionPerformed
@@ -234,7 +236,9 @@ public class guinovovendedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        guiinicial a = new guiinicial();
+        a.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
