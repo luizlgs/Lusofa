@@ -26,7 +26,7 @@ public class Conexao {
             System.out.println("Ocorreu um erro ao acessar o banco de dados: "+ex.getMessage());
         }     
     }
-    public int verifyNameAndPassword(String nome, String senha) {
+    public int verifyNameAndPassword(String nome, String senha) { //retorna 1 se o nome de usuário e senha recebido como parâmetro existir no banco de dados
         try {
             received = conexaodb.createStatement().executeQuery("select * from funcionarios");
             while(received.next()) {
@@ -39,7 +39,21 @@ public class Conexao {
             System.out.println("Ocorreu um erro ao acessar o banco de dados: "+ex.getMessage());
         }
         return 0;
-        
+    }
+
+    public int verifyProduct(String produto) { //retorna 1 se o produto recebido como parâmetro existir no banco de dados
+        try {
+            received = conexaodb.createStatement().executeQuery("select * from estoque");
+            while(received.next()) {
+                if(received.getString("produto").equals(produto)) {
+                    return 1;
+                }
+            }
+        }
+        catch (SQLException ex) {
+            System.out.println("Ocorreu um erro ao acessar o banco de dados: "+ex.getMessage());
+        }
+        return 0;
     }
 
 }
