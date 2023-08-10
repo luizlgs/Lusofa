@@ -8,7 +8,7 @@ import java.sql.Statement;
 /*
 Informações pra acessar o banco de dados
 endereço: dancingduck.clarete.dev
-usuario: root
+usuário: root
 senha: root
  */
 
