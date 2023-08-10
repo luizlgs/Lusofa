@@ -5,6 +5,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/*
+Informações pra acessar o banco de dados
+endereço: dancingduck.clarete.dev
+usuario: root
+senha: root
+ */
+
 public class Conexao {
     static Connection conexaodb = null;
     static Statement statement = null;
