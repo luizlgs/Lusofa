@@ -44,11 +44,11 @@ public class guiinicial extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(172, 164, 164));
         jLabel1.setFont(new java.awt.Font("Roboto", 1, 48)); // NOI18N
-        jLabel1.setText("Bem vindo!");
+        jLabel1.setText("Bem Vindo!");
 
         jButton1.setBackground(new java.awt.Color(153, 145, 145));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("novo vendedor");
+        jButton1.setText("Novo Vendedor");
         jButton1.setMargin(new java.awt.Insets(0, 14, 3, 14));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,7 +58,7 @@ public class guiinicial extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(153, 145, 145));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setText("Novo produto");
+        jButton4.setText("Novo Produto");
         jButton4.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,7 +79,7 @@ public class guiinicial extends javax.swing.JFrame {
 
         jButton6.setBackground(new java.awt.Color(153, 145, 145));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton6.setText("compra");
+        jButton6.setText("Compra");
         jButton6.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
