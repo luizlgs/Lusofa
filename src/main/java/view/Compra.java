@@ -56,9 +56,9 @@ public class Compra extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel3.setText("quantidade");
+        jLabel3.setText("QUANTIDADE");
 
-        jTextField1.setText("id do produto");
+        jTextField1.setText("ID do Produto");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
